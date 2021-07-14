@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C+ Interior Design Studio - Contact</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+
+    <!-- Google Fonts -->
+    <!-- font-family: 'Lobster', cursive; -->
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <!-- font-family: 'Sacramento', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/995ad10827.js" crossorigin="anonymous"></script>
+
+    <!-- Customized CSS -->
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+
+    <!-- navbar starts here -->
+    <nav>
+        <div class="logo">
+            <a href="#">C+</a>
+        </div>
+
+        <label for="toggle"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="toggle">
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="designers.html">Designers</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- navbar ends here -->  
+    
+    <!-- container starts here -->
+    <div class="container-imgAndContact">
+        <!-- theme img starts here -->
+        <section class="theme-img">
+        </section>
+        <!-- theme img ends here -->
+
+        <!-- contact starts here -->
+        <section class="contact">
+            <div class="content content1">
+                <h1>WHO WE ARE</h1>
+                <div class="section-heading-line"></div>
+                <div class="with-padding-left">
+                    <p>Finding the balance between elegancy and practicality has always been the concept of our design.</p>
+                    <p>Our work is not just designing a stylish living space but more of leting the space conveying the idea of the residence living inside.</p>
+                    <p>We focus on what you have, identify what you need, and ultimately create what you truly want:  a custom design that speaks to who you are as an individual, a family or a business.</p>
+                    <p>Let the space tell your story; we are looking forward to discover more possibilities with you.</p>
+                </div>
+            </div>
+            <div class="content content2">
+                <h1>WHERE WE ARE</h1>
+                <div class="section-heading-line"></div>
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>(+886) 8101-8800</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:alenayen0124@gmail.com"><p>cplus@mail.com</p></a>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://goo.gl/maps/C6hExj7HALu6UcjB6"><p>No. 7, Section 5, Xinyi Road, Xinyi District, Taipei, Taiwan</p></a>
+                    </div>
+                </div>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.005422837264!2d121.56235881492326!3d25.0338900339724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da80a7ad%3A0xacc4d11dc963103c!2z5Y-w5YyXMTAx!5e0!3m2!1szh-TW!2stw!4v1626098965151!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="content content3">
+                <h1>FIND US HERE</h1>
+                <div class="section-heading-line"></div>
+                    <div class="social-media">
+                        <div class="single-socialmedia"><a href="#">Facebook</a></div>
+                        <div class="single-socialmedia"><a href="#">Instagram</a></div>
+                        <div class="single-socialmedia"><a href="#">Twitter</a></div>
+                    </div>
+            </div>
+            <div class="content content4">
+                <h1>STAY INFORMED</h1>
+                <p>with everything going on</p>
+                <div class="section-heading-line"></div>
+
+                <div class="input-group">
+                    <input type="text" class="input-mail" placeholder="cplus@mail.com">
+                    <button type="submit" class="subscribe-button" value="Subscribe">Subscribe</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="test"></section>
+
+        <!-- contact ends here -->
+
+
+    </div>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        // sticky navbar
+        $(window).on("scroll", function(){
+            if( $(Window).scrollTop() ){
+                $("nav").addClass("sticky");
+            }
+            else{
+                $("nav").removeClass("sticky");
+            }
+        })
+
+        // when press the subscribe button change the inner text
+        $(".subscribe-button").click(function(){
+            $(".subscribe-button").text("Subscribed!");
+        })
+
+
+    </script>
+    
+</body>
+</html>
