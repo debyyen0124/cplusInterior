@@ -2,6 +2,13 @@
 html {
   font-family: "Open Sans", sans-serif;
 }
+input {
+  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+  -webkit-appearance: none;
+  /* FireFox */
+  -moz-appearance: none;
+  appearance: none;
+}
 .section-heading {
   font-size: 30px;
   text-transform: uppercase;
